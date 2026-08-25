@@ -259,6 +259,28 @@ hr {
   margin-top: 1.2rem;
 }
 
+/* Small PI portrait beside the affiliation text in the hero */
+.hero-pi {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.hero-pi-photo {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.hero-pi .hero-affiliation {
+  margin-top: 0;
+}
+
 /* Hero image / placeholder */
 .hero-image {
   width: 100%;
@@ -508,6 +530,7 @@ hr {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 20%; /* bias crop toward the face for portraits */
   background: var(--color-bg-soft);
   border: 1px solid var(--color-border);
   margin-bottom: 0.8rem;
