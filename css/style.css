@@ -572,18 +572,44 @@ hr {
 /* PI featured block */
 .pi {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 2rem;
+  grid-template-columns: 260px 1fr;
+  gap: 2.5rem;
   align-items: start;
 }
 
 .pi .person-photo {
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
   border-radius: var(--radius);
 }
 
 .pi h3 { font-size: 1.3rem; }
+
+/* PI education / sub-lists */
+.pi-subhead {
+  font-size: 0.82rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-heading);
+  margin: 1.2rem 0 0.5rem;
+}
+
+.edu-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: 0.93rem;
+  color: var(--color-text-soft);
+}
+
+.edu-list li {
+  margin-bottom: 0.35rem;
+}
+
+.edu-list li strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
 
 /* ---- Join Us ---------------------------------------------------------- */
 .join-block {
@@ -592,6 +618,13 @@ hr {
 }
 
 .join-block:last-child { border-bottom: 0; }
+
+/* Keep Join Us text at a comfortable reading width while the page uses the
+   full-width container so the header and content share the same left edge. */
+.join-block > p,
+.join-block .callout {
+  max-width: 68ch;
+}
 
 .callout {
   background: var(--color-bg-soft);
