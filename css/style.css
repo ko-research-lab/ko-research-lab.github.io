@@ -636,6 +636,15 @@ hr {
   font-size: 0.95rem;
 }
 
+.callout ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.callout li {
+  margin-bottom: 0.2rem;
+}
+
 /* ---- Simple content lists --------------------------------------------- */
 /* Page intros span the full content width so the header/top block lines up
    with the main content below. Intros are short, so full width stays readable. */
