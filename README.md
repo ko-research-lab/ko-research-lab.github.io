@@ -27,7 +27,7 @@ system, no framework, and no backend** — it works as-is on GitHub Pages.
 ├── js/
 │   └── main.js         # Mobile navigation toggle only
 ├── assets/
-│   ├── logo/           # Lab / university logos
+│   ├── logo/           # Lab / university logos (logo-ko-lab.png)
 │   ├── people/         # Member photos
 │   └── research/       # Research & hero images
 ├── .nojekyll           # Tells GitHub Pages to serve files as-is
